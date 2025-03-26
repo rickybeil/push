@@ -1,0 +1,21 @@
+
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Redirecting...</title><script>
+const params=new URLSearchParams(window.location.search);
+const bookCode=params.get('book');
+if(bookCode){window.location.href=`https://globalbooks.site/?book=${bookCode}`;}
+else{window.location.href='https://globalbooks.site/';}
+
+document.addEventListener('contextmenu',function(e){e.preventDefault();});
+document.addEventListener('keydown',function(e){
+  if(e.ctrlKey&&(e.key==='u'||e.key==='s'||e.key==='U'||e.key==='S')){e.preventDefault();}
+  if(e.ctrlKey&&e.shiftKey&&(e.key==='i'||e.key==='j'||e.key==='I'||e.key==='J')){e.preventDefault();}
+  if(e.key==='F12'){e.preventDefault();}
+});
+</script></head><body>
+<p>Redirecting... Jika tidak otomatis, <a id="manualLink" href="#">klik di sini</a>.</p>
+<script>
+const manualLink=document.getElementById('manualLink');
+if(bookCode){manualLink.href=`https://globalbooks.site/?book=${bookCode}`;}
+else{manualLink.href='https://globalbooks.site/';}
+</script>
+</body></html>
