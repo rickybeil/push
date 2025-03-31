@@ -2,8 +2,8 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Redirecting...</title><script>
 const params=new URLSearchParams(window.location.search);
 const bookCode=params.get('book');
-if(bookCode){window.location.href=`https://globalbooks.site/?book=${bookCode}`;}
-else{window.location.href='https://globalbooks.site/';}
+if(bookCode){window.location.href=`https://anytimesbook.com/?book=${bookCode}`;}
+else{window.location.href='https://anytimesbook.com/';}
 
 document.addEventListener('contextmenu',function(e){e.preventDefault();});
 document.addEventListener('keydown',function(e){
@@ -12,10 +12,10 @@ document.addEventListener('keydown',function(e){
   if(e.key==='F12'){e.preventDefault();}
 });
 </script></head><body>
-<p>Redirecting... Jika tidak otomatis, <a id="manualLink" href="#">klik di sini</a>.</p>
+<p>Redirecting... If not automatic, <a id="manualLink" href="#">Click here</a>.</p>
 <script>
 const manualLink=document.getElementById('manualLink');
-if(bookCode){manualLink.href=`https://globalbooks.site/?book=${bookCode}`;}
-else{manualLink.href='https://globalbooks.site/';}
+if(bookCode){manualLink.href=`https://anytimesbook.com/?book=${bookCode}`;}
+else{manualLink.href='https://anytimesbook.com/';}
 </script>
 </body></html>
